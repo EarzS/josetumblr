@@ -1,0 +1,143 @@
+extends layout.pug
+
+block header
+	//- Dropdown overlay
+	#myNav.overlay.bg-dark
+		//- Menu
+		nav.navbar.navbar-expand-lg.navbar-dark
+			.container
+				a.navbar-brand(href="#" onclick="closeNav(event);").text-uppercase
+					i.fas.fa-2x.fa-times
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+					span.navbar-toggler-icon
+				.collapse.navbar-collapse#navbarSupportedContent
+					ul.navbar-nav.mr-auto
+						li.nav-item
+							a.nav-link(href="#").text-uppercase.text-white José G. Fermín
+					ul.navbar-nav.ml-auto
+						li.nav-item
+							a.nav-link(href="#").text-uppercase.text-primary Cirruculum
+						li.nav-item
+							a.nav-link(href="#").text-uppercase.text-primary Contacto
+		.container
+			.row
+				.col-md-6
+					img(src="http://via.placeholder.com/427x567").center-block.img-fluid
+				.col-md-6.text-justify.text-white
+					p Mi nombre es José Gregorio Fermín, soy un diseñador gráfico con experiencia en creación de diseños para páginas web, banners e imágenes varias para entornos digitales y espacios fisicos.
+					p Especializado en el diseño para páginas web, aplicaciones móviles, interfaz y experiencia de usuario, presentación y empaquetado de productos, mailing y firmas personales, redes sociales, creación y rediseño de logotipos, branding, íconos y señalétoca, impresión, diagramado de revistas y otros medios como desplegables, volantes, tarjetas de presentación, varios tipos de diseños en general para diferentes entornos, retoque y edición de imágenes, diseño vectorial.
+					p Actualmente "estudiando" el diseño y renderizado en entorno arquitectónico 3D. Todos los días practicando mi desempeño y profesionalismo para un mejor acabado.
+	//- Menu
+	nav.navbar.navbar-expand-lg
+		.container
+			a.navbar-brand(href="#" onclick="openNav(event);")
+				img(src="img/joselogo.svg")
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+				span.navbar-toggler-icon
+			.collapse.navbar-collapse#navbarSupportedContent
+				ul.navbar-nav.mr-auto
+					li.nav-item
+						a.nav-link(href="#").text-uppercase José G. Fermín
+				ul.navbar-nav.ml-auto
+					li.nav-item
+						a.nav-link(href="#").text-uppercase Contacto
+	//- Header
+	header.container
+		//- Titulo
+		.row.title
+			.col-md-12
+				h1.text-center Soy José G. Fermín, y este es mi portafolio.
+		.row#specializations
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/logo.svg")
+						p Logo
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/diagram.svg")
+						p Diagramación
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/uiux.svg")
+						p UI / UX
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/icon.svg")
+						p Icono
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/print.svg")
+						p Impresión
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/montaje.svg")
+						p Montaje
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/web.svg")
+						p Web
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/mobile.svg")
+						p Apps
+			.col.text-center
+				.specialization
+					a(href="#")
+						img(src="img/fonts.svg")
+						p Fuentes
+block content
+	//- Panels
+	section#panels.container
+		.row
+			.col-md-4
+				.jose-card.active
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+			.col-md-4
+				.jose-card
+					a(href="#")
+						img(src="http://via.placeholder.com/600x600").card-img
+		.row
+			.col.text-center
+				a(href="#").btn.btn-large.btn-primary.text-uppercase#load-more Cargar Más...
+block footer
+	footer.container
+		.row.title
+			.col
+				p.text-uppercase José G. Fermín
